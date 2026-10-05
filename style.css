@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    background: #090909;
+}
+body.home {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("./assets/backgrounds/forest.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    width: min(700px, 85%);
+}
+.subtitle {
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: #b5b5b5;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(45px, 8vw, 85px);
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 550px;
+    margin: 12px auto;
+    line-height: 1.6;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.choice-button {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 16px 30px;
+
+    color: white;
+    text-decoration: none;
+    border: 1px solid #777;
+    background: rgba(20, 20, 20, 0.85);
+
+    transition: 0.3s;
+}
+
+.choice-button:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-3px);
+}
+
+.scene {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.scene-content {
+    width: min(900px, 100%);
+    padding: 40px;
+
+    background: rgba(0, 0, 0, 0.78);
+    border-left: 3px solid #ffffff;
+}
+
+.scene-number {
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.scene h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(35px, 5vw, 60px);
+    margin-bottom: 20px;
+}
+
+.scene p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.choices .choice-button {
+    margin-top: 0;
+}
+
+.ending {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+    background:
+       linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.45)
+),
+        url("../assets/backgrounds/ending.jpg") center/cover no-repeat;
+}
+
+.ending-content {
+    max-width: 800px;
+}
+
+.ending h1 {
+    font-family: "Cinzel", serif;
+    font-size: clamp(40px, 6vw, 70px);
+    margin-bottom: 25px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 700px) {
+    .scene {
+        padding: 20px;
+    }
+
+    .scene-content {
+        padding: 25px;
+    }
+
+    .choices {
+        flex-direction: column;
+    }
+
+    .choice-button {
+        text-align: center;
+    }
+}
