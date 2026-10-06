@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La cabane</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La cabane abandonnée</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-
-<main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.82)), url('../assets/backgrounds/cabin.jpg');">
-
-    <section class="scene-content">
-        <div class="scene-number">CHAPITRE 06</div>
-
-        <h1>La cabane</h1>
-
-        <p>La porte de la cabane est verrouillée. Une fenêtre cassée permet cependant d'entrer.</p>
-        <p>À l'intérieur, tu découvres une table couverte de cartes et un vieux magnétophone.</p>
-        <p>Une cassette porte une inscription : « JOURNAL DU PROFESSEUR HAWKINS ».</p>
-
-        <div class="choices">
-            <a href="scene09.html" class="choice-button">🎙️ Écouter l'enregistrement</a>
-            <a href="scene07.html" class="choice-button">🕳️ Aller vers la grotte</a>
-        </div>
-    </section>
-
+<body class="scene" style="background-image:url('../assets/backgrounds/cabin.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 06</div>
+<h1>La cabane abandonnée</h1>
+<p>Tu t'approches de la vieille cabane cachée entre les arbres.</p>
+<p>La porte n'est pas verrouillée.</p>
+<p>À l'intérieur, la poussière recouvre presque tout. Une table, quelques étagères et un ancien matériel électronique occupent la petite pièce.</p>
+<p>Contrairement au reste de Blackwood, quelqu'un semble avoir vécu ici après l'abandon du village.</p>
+<p>Sur la table, tu découvres plusieurs plans du centre de recherche.</p>
+<p>Une partie du complexe a été entourée au crayon rouge. À côté, quelqu'un a écrit : « Accès souterrain — secteur B ».</p>
+<p>Tu remarques ensuite un vieux magnétophone.</p>
+<p>Une cassette est déjà à l'intérieur.</p>
+<p>Sur son étiquette, quelques mots ont été écrits à la main : « Pour celui qui reviendra. »</p>
+<p>À côté du magnétophone se trouve une photographie déchirée représentant plusieurs scientifiques.</p>
+<p>L'un des visages a été rayé au stylo noir.</p>
+<p>C'est exactement la même personne que sur la photographie trouvée dans la maison.</p>
+<p>Tu poses lentement ton doigt sur le bouton de lecture.</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene19.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="3" y="6" width="18" height="12" rx="2"></rect>
+<circle cx="8" cy="12" r="2"></circle>
+<circle cx="16" cy="12" r="2"></circle>
+<path d="M8 12H16"></path>
+</svg>
+Écouter la cassette
+</a>
+<a class="choice-button" href="scene07.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 20C5 12 8 7 12 5C16 7 19 12 21 20"></path>
+<path d="M7 20C8 15 10 12 12 11C14 12 16 15 17 20"></path>
+</svg>
+Quitter la cabane et explorer la grotte
+</a>
+</div>
 </main>
-
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

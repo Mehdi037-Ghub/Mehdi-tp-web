@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La chambre</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La chambre abandonnée</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)), url('../assets/backgrounds/room.jpg');">
-
-        <section class="scene-content">
-            <div class="scene-number">CHAPITRE 05</div>
-            <h1>La chambre</h1>
-            <p>
-                La chambre semble avoir été abandonnée précipitamment.
-                Des feuilles sont éparpillées sur le bureau.
-            </p>
-            <p>
-                Parmi elles, tu trouves une page arrachée d'un journal.
-                Elle mentionne le laboratoire de Blackwood.
-            </p>
-            <div class="choices">
-                <a href="scene09.html" class="choice-button">
-                    📖 Lire le journal
-                </a>
-                <a href="scene04.html" class="choice-button">
-                    🔙 Explorer le sous-sol
-                </a>
-            </div>
-        </section>
-    </main>
+<body class="scene" style="background-image:url('../assets/backgrounds/room.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 05</div>
+<h1>La chambre abandonnée</h1>
+<p>Tu montes à l'étage et pousses lentement la porte entrouverte.</p>
+<p>La chambre est presque vide. Un lit défait, une armoire ouverte et un vieux bureau recouvert de poussière occupent la pièce.</p>
+<p>Sur le mur, plusieurs documents ont été arrachés. Il ne reste que des morceaux de papier et quelques photographies déchirées.</p>
+<p>Tu t'approches du bureau.</p>
+<p>Dans un tiroir, tu découvres une page jaunie couverte d'une écriture nerveuse.</p>
+<p>« Ils veulent poursuivre les tests sur le Sujet 07. Je leur ai dit que sa mémoire ne supporterait pas une nouvelle procédure. Ils refusent de m'écouter. »</p>
+<p>Plus bas, une autre phrase a été écrite avec plus de force.</p>
+<p>« S'ils recommencent, je le sortirai moi-même de Blackwood. »</p>
+<p>La signature a été presque entièrement déchirée. Il ne reste qu'une seule lettre : « H ».</p>
+<p>Ton regard se fige sur les mots « Sujet 07 ».</p>
+<p>Tu as déjà entendu cette expression dans le sous-sol.</p>
+<p>Au dos de la page, une indication a été griffonnée : « Les autres notes sont cachées dans l'ancienne salle des archives. »</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene09.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"></path>
+<path d="M8 8H16"></path>
+<path d="M8 12H16"></path>
+<path d="M8 16H13"></path>
+</svg>
+Chercher la salle des archives
+</a>
+<a class="choice-button" href="scene04.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 4V20"></path>
+<path d="M6 14L12 20L18 14"></path>
+</svg>
+Retourner au sous-sol
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

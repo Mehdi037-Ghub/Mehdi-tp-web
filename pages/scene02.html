@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La maison</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La maison abandonnée</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.8)), url('../assets/backgrounds/house.jpg');">
-
-        <section class="scene-content">
-            <div class="scene-number">CHAPITRE 02</div>
-            <h1>La maison</h1>
-            <p>
-                La porte de la maison est entrouverte.
-                Tu pousses doucement le bois qui grince dans le silence.
-            </p>
-            <p>
-                Une odeur de poussière et d'humidité envahit tes poumons.
-                Sur le mur, une vieille photographie montre plusieurs
-                personnes devant un laboratoire.
-            </p>
-            <p>
-                Tu entends soudain un bruit provenant de l'étage.
-            </p>
-            <div class="choices">
-                <a href="scene04.html" class="choice-button">
-                    🔦 Descendre au sous-sol
-                </a>
-                <a href="scene05.html" class="choice-button">
-                    🚪 Monter à l'étage
-                </a>
-            </div>
-        </section>
-    </main>
+<body class="scene" style="background-image:url('../assets/backgrounds/house.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 02</div>
+<h1>La maison abandonnée</h1>
+<p>Tu pousses lentement la porte de la vieille maison.</p>
+<p>À l'intérieur, tout semble figé dans le temps. La poussière recouvre les meubles et l'air est lourd, presque irrespirable.</p>
+<p>Sur un mur, plusieurs photographies jaunies montrent Blackwood avant son abandon.</p>
+<p>L'une d'elles attire ton attention.</p>
+<p>Sept personnes en blouse blanche posent devant un bâtiment portant l'inscription « BLACKWOOD RESEARCH FACILITY ».</p>
+<p>Le visage de l'un des chercheurs a été violemment rayé au stylo noir.</p>
+<p>Au dos de la photographie, une phrase a été écrite à la main : « Il a essayé de les arrêter. »</p>
+<p>Un bruit sourd résonne soudain sous le plancher.</p>
+<p>Un escalier descend vers le sous-sol. À l'étage, une porte entrouverte laisse apparaître une chambre plongée dans l'obscurité.</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene04.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 5H19"></path>
+<path d="M7 9H17"></path>
+<path d="M9 13H15"></path>
+<path d="M11 17H13"></path>
+<path d="M12 5V21"></path>
+</svg>
+Descendre au sous-sol
+</a>
+<a class="choice-button" href="scene05.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 20V10L12 4L20 10V20"></path>
+<path d="M9 20V14H15V20"></path>
+</svg>
+Monter à l'étage
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

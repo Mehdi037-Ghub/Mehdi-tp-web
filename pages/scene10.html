@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La vérité</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Subject 07</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-
-<body>
-
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.9)), url('../assets/backgrounds/lab.jpg');">
-
-        <section class="scene-content">
-
-            <div class="scene-number">CHAPITRE 10</div>
-
-            <h1>La vérité</h1>
-
-            <p>
-                Tu ouvres le dernier dossier.
-            </p>
-
-            <p>
-                Les documents révèlent que le laboratoire étudiait
-                les souvenirs des habitants de Blackwood.
-            </p>
-
-            <p>
-                Mais la dernière expérience a utilisé les souvenirs
-                d'un enfant : toi.
-            </p>
-
-            <p>
-                Tu réalises que tu n'es pas revenu à Blackwood pour
-                découvrir le passé.
-            </p>
-
-            <p>
-                Tu es revenu pour retrouver quelque chose que l'on
-                t'avait volontairement fait oublier.
-            </p>
-
-            <div class="choices">
-
-                <a href="scene12.html" class="choice-button">
-                    🧠 Ouvrir le dernier dossier
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
+<body class="scene scene-lab" style="background-image:url('../assets/backgrounds/truth.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 10</div>
+<h1>SUBJECT 07</h1>
+<p>Tu t'approches du terminal et sélectionnes le dossier 07.</p>
+<p>L'écran hésite quelques secondes avant d'afficher une série de documents confidentiels.</p>
+<p>« PROGRAMME MNEMOSYNE — DOSSIER SUJET 07 ».</p>
+<p>Tu fais défiler les informations.</p>
+<p>Les premières pages contiennent des rapports médicaux, des résultats d'expériences et des observations sur la mémoire du sujet.</p>
+<p>Puis une photographie apparaît à l'écran.</p>
+<p>Ton souffle se coupe.</p>
+<p>Sur la photo, un enfant est assis dans une salle blanche, entouré de machines.</p>
+<p>Cet enfant, c'est toi.</p>
+<p>Tu continues à lire, les mains tremblantes.</p>
+<p>« Sujet 07 présente une résistance anormale au protocole d'enfouissement mémoriel. Des fragments persistent après chaque procédure. »</p>
+<p>Tu comprends enfin pourquoi Blackwood te semblait familier.</p>
+<p>Tu as déjà vécu ici.</p>
+<p>Les couloirs, les portes métalliques, les voix derrière les vitres... ce n'étaient pas des impressions.</p>
+<p>C'étaient tes souvenirs.</p>
+<p>Un dernier rapport porte la signature du Dr Elias Hawkins.</p>
+<p>« Je refuse d'autoriser une nouvelle procédure sur 07. Son esprit ne survivra peut-être pas à une nouvelle tentative. »</p>
+<p>Au bas de l'écran, un dossier protégé attire ton attention : « MEMORY RECORDS — SUBJECT 07 ».</p>
+<div class="choice-label">TES SOUVENIRS SONT ENCORE ICI</div>
+<div class="choices">
+<a class="choice-button" href="scene12.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 3C8 3 5 6 5 10C5 13 7 15 9 16V20H15V16C17 15 19 13 19 10C19 6 16 3 12 3Z"></path>
+<path d="M9 10H15"></path>
+<path d="M12 7V13"></path>
+</svg>
+Accéder aux souvenirs
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
+<script>
+ajouterIndice("subject07");
+</script>
 </body>
 </html>

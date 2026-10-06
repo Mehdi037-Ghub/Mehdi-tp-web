@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le sous-sol</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Le sous-sol</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)), url('../assets/backgrounds/basement.jpg');">
-
-        <section class="scene-content">
-            <div class="scene-number">CHAPITRE 04</div>
-            <h1>Le sous-sol</h1>
-            <p>
-                Tu descends les marches une par une.
-                Une ampoule clignote au plafond.
-            </p>
-            <p>
-                Au fond de la pièce, tu trouves une porte métallique.
-                Un symbole étrange est gravé dessus.
-            </p>
-            <p>
-                En l'ouvrant, tu découvres un passage secret.
-            </p>
-            <div class="choices">
-                <a href="scene08.html" class="choice-button">
-                    🧪 Suivre le passage
-                </a>
-                <a href="scene05.html" class="choice-button">
-                    🔙 Retourner à l'étage
-                </a>
-            </div>
-        </section>
-    </main>
+<body class="scene scene-basement" style="background-image:url('../assets/backgrounds/basement.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 04</div>
+<h1>Le sous-sol</h1>
+<p>Tu descends lentement les marches grinçantes.</p>
+<p>L'air devient plus froid à mesure que tu t'enfonces sous la maison.</p>
+<p>En bas de l'escalier, tu découvres une cave presque vide. Des étagères rouillées longent les murs et plusieurs cartons ont été abandonnés sur le sol.</p>
+<p>Mais quelque chose ne correspond pas au reste de la maison.</p>
+<p>Derrière une vieille armoire, une partie du mur est faite de métal.</p>
+<p>Tu déplaces l'armoire et découvres une porte industrielle dissimulée dans la pierre.</p>
+<p>Le même symbole que celui utilisé par les installations de Blackwood est gravé au centre de la porte.</p>
+<p>Juste en dessous, une inscription presque effacée apparaît sous la poussière : « B-07 ».</p>
+<p>En posant la main sur le métal, une douleur brutale traverse ton crâne.</p>
+<p>Pendant une seconde, tu entends une voix lointaine : « Sujet 07... reste éveillé. »</p>
+<p>Puis le silence revient.</p>
+<p>À côté de la porte, un ancien mécanisme permet encore de l'ouvrir. Tu peux aussi remonter et poursuivre tes recherches dans la maison.</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene08.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="5" y="3" width="14" height="18" rx="1"></rect>
+<path d="M9 12H15"></path>
+<circle cx="15" cy="12" r="1"></circle>
+</svg>
+Ouvrir la porte métallique
+</a>
+<a class="choice-button" href="scene05.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 20V4"></path>
+<path d="M6 10L12 4L18 10"></path>
+</svg>
+Retourner à l'étage
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

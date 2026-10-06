@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>L'Écho de Blackwood</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Écho de Blackwood</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body class="home">
-
-    <main class="home-content">
-
-        <p class="subtitle">UNE AVENTURE INTERACTIVE</p>
-
-        <h1>L'ÉCHO DE<br>BLACKWOOD</h1>
-
-        <p class="intro">
-            Une nuit, un message mystérieux t'attire vers un village
-            abandonné depuis plus de vingt ans.
-        </p>
-
-        <p class="intro">
-            Personne ne sait ce qui s'est réellement passé à Blackwood.
-            Mais quelqu'un semble vouloir que tu découvres la vérité.
-        </p>
-
-        <a href="pages/scene01.html" class="choice-button">
-            🔦 Commencer l'aventure
-        </a>
-
-    </main>
-
+<main class="home-content">
+<div class="home-top">
+<span></span>
+<p>UNE AVENTURE INTERACTIVE</p>
+<span></span>
+</div>
+<h1>L'ÉCHO DE<br><strong>BLACKWOOD</strong></h1>
+<div class="title-line"></div>
+<p class="intro">Une nuit, un message mystérieux t'attire vers un village abandonné depuis plus de vingt ans.</p>
+<p class="intro">Personne ne sait ce qui s'est réellement passé à Blackwood. Mais quelqu'un semble vouloir que tu découvres la vérité.</p>
+<p class="start-label">OSERAS-TU DÉCOUVRIR LA VÉRITÉ ?</p>
+<a href="pages/scene01.html" class="choice-button start-button">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M8 5L18 12L8 19Z"></path>
+</svg>
+COMMENCER L'AVENTURE
+</a>
+<div class="home-symbols">
+<span>◇</span>
+<span>◆</span>
+<span>◇</span>
+</div>
+</main>
+<audio autoplay loop>
+<source src="assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="script.js"></script>
 </body>
 </html>

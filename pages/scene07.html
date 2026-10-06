@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La grotte</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>La grotte</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-
-<body>
-
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9)), url('../assets/backgrounds/cave.jpg');">
-
-        <section class="scenecontent">
-
-            <div class="scene-number">CHAPITRE 07</div>
-            <h1>La grotte</h1>
-            <p>
-                Tu allumes la lampe de ton téléphone et pénètres dans
-                l'obscurité.
-            </p>
-            <p>
-                Après quelques mètres, tu trouves une porte en métal.
-                Elle porte exactement le même symbole que celui découvert
-                dans la maison.
-            </p>
-            <div class="choices">
-                <a href="scene08.html" class="choice-button">
-                    🚪 Ouvrir la porte
-                </a>
-                <a href="scene09.html" class="choice-button">
-                    📖 Examiner les inscriptions
-                </a>
-            </div>
-        </section>
-    </main>
+<body class="scene scene-cave" style="background-image:url('../assets/backgrounds/cave.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 07</div>
+<h1>La grotte</h1>
+<p>Tu pénètres dans l'ouverture sombre au milieu des rochers.</p>
+<p>L'air est humide et glacé. Plus tu avances, plus les bruits de la forêt disparaissent derrière toi.</p>
+<p>Après quelques mètres, la grotte change brusquement d'apparence.</p>
+<p>La roche naturelle laisse place à des murs renforcés par du béton et à de vieux câbles électriques fixés au plafond.</p>
+<p>Cette grotte n'était pas seulement un passage naturel.</p>
+<p>Blackwood l'utilisait autrefois.</p>
+<p>Sur la paroi, tu retrouves le symbole aperçu sur l'arbre dans la forêt : un cercle traversé par trois lignes verticales.</p>
+<p>Mais cette fois, d'autres symboles l'entourent.</p>
+<p>Sous la poussière, une inscription métallique apparaît : « SECTEUR B — ACCÈS RESTREINT ».</p>
+<p>Plus loin, le tunnel continue vers une ancienne porte de sécurité. À côté, plusieurs marques ont été gravées directement dans la roche.</p>
+<p>L'une d'elles attire immédiatement ton regard.</p>
+<p>« 07 ».</p>
+<p>Une sensation étrange te traverse. Tu as l'impression d'être déjà passé par cet endroit.</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene20.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="11" cy="11" r="7"></circle>
+<path d="M20 20L16 16"></path>
+<path d="M8 11H14"></path>
+<path d="M11 8V14"></path>
+</svg>
+Examiner les inscriptions
+</a>
+<a class="choice-button" href="scene08.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="5" y="3" width="14" height="18" rx="1"></rect>
+<path d="M9 12H15"></path>
+<circle cx="15" cy="12" r="1"></circle>
+</svg>
+Forcer la porte de sécurité
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

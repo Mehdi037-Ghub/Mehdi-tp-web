@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le laboratoire</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Le laboratoire secret</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-
-<body>
-
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9)), url('../assets/backgrounds/lab.jpg');">
-
-        <section class="scene-content">
-
-            <div class="scene-number">CHAPITRE 08</div>
-
-            <h1>Le laboratoire</h1>
-
-            <p>
-                La porte s'ouvre dans un grincement métallique.
-                Derrière elle se trouve un laboratoire gigantesque.
-            </p>
-
-            <p>
-                Des écrans sont encore allumés.
-                Une série de dossiers porte ton nom.
-            </p>
-
-            <p>
-                Tu comprends alors que ta présence ici n'est peut-être
-                pas une coïncidence.
-            </p>
-
-            <div class="choices">
-
-                <a href="scene10.html" class="choice-button">
-                    🔍 Découvrir la vérité
-                </a>
-
-                <a href="scene11.html" class="choice-button">
-                    🏃 S'enfuir
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
+<body class="scene scene-lab" style="background-image:url('../assets/backgrounds/lab.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 08</div>
+<h1>Le laboratoire secret</h1>
+<p>La porte s'ouvre dans un grincement métallique.</p>
+<p>Derrière elle, tu découvres un immense complexe souterrain caché sous Blackwood.</p>
+<p>Des couloirs blancs s'étendent devant toi. Des vitres brisées, des câbles arrachés et du matériel scientifique abandonné témoignent d'un départ précipité.</p>
+<p>Tu t'arrêtes brusquement.</p>
+<p>Tu reconnais cet endroit.</p>
+<p>Pas comme un lieu déjà visité récemment, mais comme un souvenir enfoui depuis très longtemps.</p>
+<p>Une lumière blanche. Des voix derrière une vitre. Une douleur dans ton crâne.</p>
+<p>Puis plus rien.</p>
+<p>Sur un mur, un ancien panneau indique : « BLACKWOOD — PROGRAMME MNEMOSYNE ».</p>
+<p>Plus bas, plusieurs secteurs sont mentionnés : « ARCHIVES », « OBSERVATION », « MÉMOIRE » et « SUJETS ».</p>
+<p>Un terminal fonctionne encore au fond de la pièce. Son écran affiche une seule notification.</p>
+<p>« DOSSIER SUJET DISPONIBLE — 07 ».</p>
+<p>À quelques mètres, une sortie de secours semble encore accessible.</p>
+<div class="choice-label">LA VÉRITÉ EST À PORTÉE DE MAIN</div>
+<div class="choices">
+<a class="choice-button" href="scene10.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="3" y="4" width="18" height="14" rx="1"></rect>
+<path d="M8 21H16"></path>
+<path d="M12 18V21"></path>
+<path d="M7 9H17"></path>
+<path d="M7 13H13"></path>
+</svg>
+Ouvrir le dossier 07
+</a>
+<a class="choice-button" href="scene11.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 12H19"></path>
+<path d="M14 7L19 12L14 17"></path>
+<path d="M5 5V19"></path>
+</svg>
+Quitter le laboratoire
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
+<script>
+ajouterIndice("laboratoire");
+</script>
 </body>
 </html>

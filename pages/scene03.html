@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La forêt</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Le sentier dans la forêt</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.85)), url('../assets/backgrounds/forest.jpg');">
-
-        <section class="scene-content">
-            <div class="scene-number">CHAPITRE 03</div>
-            <h1>La forêt</h1>
-            <p>
-                Les arbres deviennent de plus en plus nombreux à mesure
-                que tu avances.
-            </p>
-            <p>
-                Quelque chose bouge entre les arbres.
-                Tu t'arrêtes.
-            </p>
-            <p>
-                Le silence revient.
-            </p>
-            <p>
-                Plus loin, tu aperçois une vieille cabane.
-                À ta droite, une ouverture sombre semble mener sous la
-                montagne.
-            </p>
-            <div class="choices">
-                <a href="scene06.html" class="choice-button">
-                    🛖 Examiner la cabane
-                </a>
-                <a href="scene07.html" class="choice-button">
-                    🕳️ Entrer dans la grotte
-                </a>
-            </div>
-        </section>
-    </main>
+<body class="scene" style="background-image:url('../assets/backgrounds/forest.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 03</div>
+<h1>Le sentier dans la forêt</h1>
+<p>Tu quittes le village et t'enfonces dans la forêt.</p>
+<p>À mesure que tu avances, les lumières de Blackwood disparaissent derrière les arbres. Il ne reste bientôt plus que le bruit de tes pas et celui du vent entre les branches.</p>
+<p>Après quelques minutes, tu remarques quelque chose d'étrange sur le tronc d'un arbre.</p>
+<p>Un symbole a été profondément gravé dans l'écorce : un cercle traversé par trois lignes verticales.</p>
+<p>Tu ne l'as jamais vu auparavant.</p>
+<p>Pourtant, pendant une fraction de seconde, une image traverse ton esprit : un couloir blanc, une porte métallique et ce même symbole.</p>
+<p>Puis le souvenir disparaît.</p>
+<p>Un peu plus loin, le sentier se divise en deux.</p>
+<p>À gauche, une vieille cabane se cache entre les arbres. À droite, une ouverture sombre s'enfonce dans la roche.</p>
+<div class="choice-label">QUEL CHEMIN VAS-TU PRENDRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene06.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 11L12 4L21 11"></path>
+<path d="M5 10V20H19V10"></path>
+<path d="M9 20V15H15V20"></path>
+</svg>
+Explorer la cabane
+</a>
+<a class="choice-button" href="scene07.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 20C5 12 8 7 12 5C16 7 19 12 21 20"></path>
+<path d="M7 20C8 15 10 12 12 11C14 12 16 15 17 20"></path>
+</svg>
+Entrer dans la grotte
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

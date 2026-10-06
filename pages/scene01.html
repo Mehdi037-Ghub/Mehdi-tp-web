@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le village abandonné</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>L'arrivée à Blackwood</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-<body>
-
-<main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)), url('../assets/backgrounds/village.jpg');">
-
-    <section class="scene-content">
-        <div class="scene-number">CHAPITRE 01</div>
-
-        <h1>Le village abandonné</h1>
-
-        <p>La voiture s'arrête devant un vieux panneau presque entièrement recouvert de mousse.</p>
-        <p>« BLACKWOOD — 3 km »</p>
-        <p>La route derrière toi disparaît dans le brouillard. Ton téléphone n'a plus aucun réseau.</p>
-        <p>Devant toi, deux chemins s'offrent à toi.</p>
-
-        <div class="choices">
-            <a href="scene02.html" class="choice-button">🏚️ Explorer la maison</a>
-            <a href="scene03.html" class="choice-button">🌲 Entrer dans la forêt</a>
-        </div>
-    </section>
-
+<body class="scene" style="background-image:url('../assets/backgrounds/village.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 01</div>
+<h1>L'arrivée à Blackwood</h1>
+<p>Après plusieurs heures de marche, tu atteins enfin Blackwood.</p>
+<p>Le village semble abandonné depuis des années. Les maisons sont silencieuses, les fenêtres brisées et une épaisse brume recouvre les rues.</p>
+<p>Pourtant, cet endroit te paraît étrangement familier.</p>
+<p>Tu sors de ta poche le message anonyme qui t'a conduit jusqu'ici.</p>
+<p>« Blackwood détient ce qu'on t'a pris. Trouve le laboratoire. Ne fais confiance à personne. »</p>
+<p>Aucun nom. Aucune explication. Seulement ces quelques mots et les coordonnées de Blackwood.</p>
+<p>Devant toi, une vieille maison domine le village. Sur ta droite, un sentier disparaît entre les arbres de la forêt.</p>
+<div class="choice-label">QUE VAS-TU FAIRE ?</div>
+<div class="choices">
+<a class="choice-button" href="scene02.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 11L12 4L21 11"></path>
+<path d="M5 10V20H19V10"></path>
+<path d="M9 20V14H15V20"></path>
+</svg>
+Explorer la maison
+</a>
+<a class="choice-button" href="scene03.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 3L7 10H10L5 17H19L14 10H17L12 3Z"></path>
+<path d="M12 17V21"></path>
+</svg>
+Suivre le sentier
+</a>
+</div>
 </main>
-
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
 </body>
 </html>

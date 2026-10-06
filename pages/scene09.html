@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le journal</title>
-    <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Les archives de Blackwood</title>
+<link rel="stylesheet" href="../style.css">
 </head>
-
-<body>
-
-    <main class="scene" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9)), url('../assets/backgrounds/journal.jpg');">
-
-        <section class="scene-content">
-
-            <div class="scene-number">CHAPITRE 09</div>
-
-            <h1>Le journal du professeur</h1>
-
-            <p>
-                Les notes racontent qu'un groupe de scientifiques travaillait
-                sur une expérience capable de modifier les souvenirs humains.
-            </p>
-
-            <p>
-                L'expérience a mal tourné.
-                Les scientifiques ont tenté de cacher leurs recherches
-                sous le village.
-            </p>
-
-            <p>
-                Une dernière phrase attire ton attention :
-                « Si quelqu'un retrouve ce journal, qu'il ne cherche surtout
-                pas la salle principale. »
-            </p>
-
-            <div class="choices">
-
-                <a href="scene08.html" class="choice-button">
-                    🧪 Chercher le laboratoire
-                </a>
-
-                <a href="scene07.html" class="choice-button">
-                    🔙 Retourner dans la grotte
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
+<body class="scene" style="background-image:url('../assets/backgrounds/journal.jpg');">
+<main class="scene-content">
+<div class="scene-number">CHAPITRE 09</div>
+<h1>Les archives de Blackwood</h1>
+<p>En suivant les indications trouvées dans la chambre, tu découvres une petite salle dissimulée derrière une bibliothèque.</p>
+<p>Des dizaines de dossiers sont entassés sur les étagères. La plupart portent le symbole de Blackwood.</p>
+<p>Au fond de la pièce, un carnet noir repose seul sur un bureau.</p>
+<p>Sur la couverture, un nom est encore lisible : « Dr Elias Hawkins ».</p>
+<p>Tu ouvres le carnet.</p>
+<p>« Le programme MNEMOSYNE devait permettre de traiter les souvenirs traumatiques. Ce n'est plus ce que nous faisons ici. »</p>
+<p>Quelques pages plus loin, l'écriture devient plus nerveuse.</p>
+<p>« Ils ne cherchent plus à soigner la mémoire. Ils veulent apprendre à la modifier, à l'enfouir et, si nécessaire, à la remplacer. »</p>
+<p>Puis tu retrouves une expression désormais familière.</p>
+<p>« Le Sujet 07 réagit différemment des autres. Malgré les procédures, certains souvenirs reviennent. Ils veulent recommencer. Je refuse de les laisser faire. »</p>
+<p>Tu comprends alors que le mystérieux « H » de la page trouvée dans la chambre était Hawkins.</p>
+<p>Sur la dernière page, une phrase a été soulignée plusieurs fois.</p>
+<p>« Si je dois faire sortir 07 de Blackwood, j'utiliserai le passage du secteur B. »</p>
+<p>En dessous, Hawkins a dessiné un plan incomplet menant vers une zone marquée : « ACCÈS INTERDIT ».</p>
+<div class="choice-label">HAWKINS A LAISSÉ UNE PISTE</div>
+<div class="choices">
+<a class="choice-button" href="scene14.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 5H20V19H4Z"></path>
+<path d="M8 9H16"></path>
+<path d="M8 13H13"></path>
+<path d="M15 15L19 19"></path>
+</svg>
+Suivre le plan de Hawkins
+</a>
+<a class="choice-button" href="scene04.html">
+<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 4V20"></path>
+<path d="M6 14L12 20L18 14"></path>
+</svg>
+Retourner au sous-sol
+</a>
+</div>
+</main>
+<audio autoplay loop>
+<source src="../assets/sounds/ambience.mp3" type="audio/mpeg">
+</audio>
+<script src="../script.js"></script>
+<script>
+ajouterIndice("journal");
+</script>
 </body>
 </html>
