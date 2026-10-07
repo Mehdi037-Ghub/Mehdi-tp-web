@@ -105,8 +105,3 @@ Le joueur décide de quitter Blackwood avant d'ouvrir le dossier du Sujet 07. Il
 
 Le joueur retrouve ses souvenirs, découvre le rôle de Hawkins, récupère les preuves du programme MNEMOSYNE et quitte Blackwood en connaissant enfin son passé.
 
-## Lancer le projet
-
-Ouvrir `index.html` dans un navigateur web puis cliquer sur **COMMENCER L'AVENTURE**.
-
-Pour profiter de l'expérience complète, il est conseillé d'activer le son du navigateur.
